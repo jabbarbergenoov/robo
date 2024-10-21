@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/global.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
 </head>
+
 <body>
-    
+    <section class="trainer">
+        <div class="container">
+            <h2>Профессиональные тренеры</h2>
+            <div class="slider">
+                <div class="slide">
+                    <img src="images/unsplash_Zz5LQe-VSMY.jpg" alt="Ирина Палы">
+                    <h3>Ирина Палы</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="#" onclick="x.showModal() ">Подробнее</a>
+                </div>
+                <dialog id="x">
+                    <form method="dialog">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./images/unsplash_Zz5LQe-VSMY.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3>Ирина Палы</h3>
+                                <p>преподаватель по робототехнике</p>
+                                <img src="./images/Instagram.svg" alt="">
+                                <img src="images/Facebook.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-href">
+                            <a href="#">Образование</a>
+                            <a href="#">Опыт работы</a>
+                            <a href="#">Награды</a>
+                        </div>
+                        <div class="modal-text">
+                            <p>Сентябрь 1995 — Июнь 2000
+                                Санкт-Петербургский политехнический университет Петра Великого
+                                Факультет: Компьютерных наук и технологий
+                                Специальность: Математика и компьютерные науки
+                                Форма обучения: Очная</p>
+                        </div>
+                    </form>
+                    <button onclick="x.close()" class="mod">Закрыть</button>
+                </dialog>
+                <div class="slide">
+                    <img src="images/unsplash_IF9TK5Uy-KI.jpg" alt="Наталья Орлова">
+                    <h3>Наталья Орлова</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="#" onclick="c.showModal() ">Подробнее</a>
+                </div>
+                <dialog id="c">
+                    <form method="dialog">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="./images/unsplash_IF9TK5Uy-KI.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3>Наталья Орлова</h3>
+                                <p>преподаватель по робототехнике</p>
+                                <img src="./images/Instagram.svg" alt="">
+                                <img src="images/Facebook.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-href">
+                            <a href="#">Образование</a>
+                            <a href="#">Опыт работы</a>
+                            <a href="#">Награды</a>
+                        </div>
+                        <div class="modal-text">
+                            <p>Сентябрь 1995 — Июнь 2000
+                                Санкт-Петербургский политехнический университет Петра Великого
+                                Факультет: Компьютерных наук и технологий
+                                Специальность: Математика и компьютерные науки
+                                Форма обучения: Очная</p>
+                        </div>
+                    </form>
+                    <button onclick="c.close()" class="mod">Закрыть</button>
+                </dialog>
+                <div class="slide">
+                    <img src="images/unsplash_rriAI0nhcbc.jpg" alt="Никита Петров">
+                    <h3>Никита Петров</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="#" onclick="o.showModal() ">Подробнее</a>
+                </div>
+                <dialog id="o">
+                    <form method="dialog">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="images/unsplash_rriAI0nhcbc.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3>Никита Петров</h3>
+                                <p>преподаватель по робототехнике</p>
+                                <img src="./images/Instagram.svg" alt="">
+                                <img src="images/Facebook.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-href">
+                            <a href="#">Образование</a>
+                            <a href="#">Опыт работы</a>
+                            <a href="#">Награды</a>
+                        </div>
+                        <div class="modal-text">
+                            <p>Сентябрь 1995 — Июнь 2000
+                                Санкт-Петербургский политехнический университет Петра Великого
+                                Факультет: Компьютерных наук и технологий
+                                Специальность: Математика и компьютерные науки
+                                Форма обучения: Очная</p>
+                        </div>
+                    </form>
+                    <button onclick="o.close()" class="mod">Закрыть</button>
+                </dialog>
+                <div class="slide">
+                    <img src="images/unsplash_OhKElOkQ3RE.jpg" alt="Константин Назаров">
+                    <h3>Константин Назаров</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="#" onclick="b.showModal() ">Подробнее</a>
+                </div>
+                <dialog id="b">
+                    <form method="dialog">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="images/unsplash_OhKElOkQ3RE.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3>Константин Назаров</h3>
+                                <p>преподаватель по робототехнике</p>
+                                <img src="./images/Instagram.svg" alt="">
+                                <img src="images/Facebook.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-href">
+                            <a href="#">Образование</a>
+                            <a href="#">Опыт работы</a>
+                            <a href="#">Награды</a>
+                        </div>
+                        <div class="modal-text">
+                            <p>Сентябрь 1995 — Июнь 2000
+                                Санкт-Петербургский политехнический университет Петра Великого
+                                Факультет: Компьютерных наук и технологий
+                                Специальность: Математика и компьютерные науки
+                                Форма обучения: Очная</p>
+                        </div>
+                    </form>
+                    <button onclick="b.close()" class="mod">Закрыть</button>
+                </dialog>
+                <div class="slide">
+                    <img src="images/unsplash_Z_bTArFy6ks.jpg" alt="Паша Веселков">
+                    <h3>Паша Веселков</h3>
+                    <p>преподаватель по робототехнике</p>
+                    <a href="#" onclick="d.showModal() ">Подробнее</a>
+                </div>
+                <dialog id="d">
+                    <form method="dialog">
+                        <div class="profile">
+                            <div class="profile-img">
+                                <img src="images/unsplash_Z_bTArFy6ks.jpg" alt="">
+                            </div>
+                            <div class="profile-text">
+                                <h3>Паша Веселков</h3>
+                                <p>преподаватель по робототехнике</p>
+                                <img src="./images/Instagram.svg" alt="">
+                                <img src="images/Facebook.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="modal-href">
+                            <a href="#">Образование</a>
+                            <a href="#">Опыт работы</a>
+                            <a href="#">Награды</a>
+                        </div>
+                        <div class="modal-text">
+                            <p>Сентябрь 1995 — Июнь 2000
+                                Санкт-Петербургский политехнический университет Петра Великого
+                                Факультет: Компьютерных наук и технологий
+                                Специальность: Математика и компьютерные науки
+                                Форма обучения: Очная</p>
+                        </div>
+                    </form>
+                    <button onclick="d.close()" class="mod">Закрыть</button>
+                </dialog>
+            </div>
+            <div class="scrollbar">
+                <button class="scroll-left">❮</button>
+                <button class="scroll-right">❯</button>
+            </div>
+        </div>
+    </section>
+    <section class="price">
+        <div class="container">
+            <h2>Выберите нужный пакет</h2>
+            <div class="price-inner">
+                <div class="price-card">
+                    <h3>- Pro -</h3>
+                    <h3>20.000 ₽</h3>
+                    <p>УМК по робототетхнике и программированию</p>
+                    <button>Оставить заявку</button>
+                </div>
+                <div class="price-card">
+                    <h3>- Pro -</h3>
+                    <h3>20.000 ₽</h3>
+                    <p>УМК по робототетхнике и программированию</p>
+                    <button>Оставить заявку</button>
+                </div>
+                <div class="price-card">
+                    <h3>- Pro -</h3>
+                    <h3>20.000 ₽</h3>
+                    <p>УМК по робототетхнике и программированию</p>
+                    <button>Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/scrip.js"></script>
 </body>
+
 </html>

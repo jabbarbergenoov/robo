@@ -1,1 +1,258 @@
-/*# sourceMappingURL=global.css.map */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.trainer h2 {
+  margin-bottom: 50px;
+  font-family: "Jost";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #141024;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 50px;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+.slider::-webkit-scrollbar-thumb {
+  background: black;
+}
+.slider::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.slide h3 {
+  min-width: 200px;
+  font-family: "Jost";
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: left;
+}
+.slide p {
+  font-family: "Jost";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+  color: rgba(20, 16, 36, 0.6980392157);
+}
+.slide a {
+  color: #D52027;
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: left;
+}
+.slide img {
+  width: 240px;
+  height: 270px;
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.scrollbar {
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-bottom: 150px;
+}
+
+.scroll-left,
+.scroll-right {
+  background-color: #141024;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.scroll-left:hover,
+.scroll-right:hover {
+  background-color: gray;
+}
+
+.price-card {
+  background-color: #fff;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  width: 310px;
+  height: 360px;
+  text-align: center;
+  padding-top: 40px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.price-card:hover {
+  color: #fff;
+  transform: scale(1.05);
+  background-color: #141024;
+}
+@media (max-width: 768px) {
+  .price-card {
+    width: 100%;
+  }
+}
+
+.profile {
+  display: flex;
+  gap: 20px;
+}
+.profile .profile-text h3 {
+  font-size: 16px;
+  padding-bottom: 7px;
+}
+.profile .profile-text p {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.profile .profile-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.modal-href {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-family: "Jost";
+  margin-top: 10px;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+}
+.modal-href a {
+  color: #000;
+  transition: 0.5s;
+  font-weight: 600;
+}
+.modal-href a:hover {
+  color: #D52027;
+}
+
+.modal-text {
+  margin-top: 20px;
+}
+
+dialog {
+  opacity: 0;
+  scale: 0;
+  display: block;
+  transition: all 0.5s;
+  padding: 20px;
+  border: 1px solid #fff;
+  overflow-y: auto;
+}
+dialog[open] {
+  opacity: 1;
+  scale: 2;
+  width: 450px;
+  height: 368px;
+  position: relative;
+  left: 1200px;
+  top: 570px;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+  dialog[open] {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.mod {
+  position: absolute;
+  top: 8%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-size: 12px;
+}
+
+.price h2 {
+  margin-bottom: 50px;
+  font-family: "Jost";
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 80px;
+  color: #141024;
+}
+.price-inner {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+@media (max-width: 768px) {
+  .price-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.price .price-card {
+  height: 500px;
+}
+.price .price-card h3 {
+  font-family: "Jost";
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.price .price-card p {
+  font-family: "Jost";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+.price .price-card button {
+  padding: 25px 54px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #D52027;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.price .price-card button:hover {
+  background-color: #fff;
+  color: #D52027;
+  border: 1px solid #D52027;
+}/*# sourceMappingURL=global.css.map */
