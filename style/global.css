@@ -276,6 +276,64 @@ header {
     display: none;
   }
 }
+.robo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.robo-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+.robo-top h1 {
+  font-size: 18px;
+  width: 600px;
+}
+.robo-top p {
+  font-size: 14px;
+}
+.robo-bottom {
+  display: flex;
+  gap: 20px;
+}
+.robo-bottom h1 {
+  color: orangered;
+}
+.robo-bottom p {
+  font-size: 15px;
+  width: 250px;
+}
+
+.kurs {
+  margin-top: 100px;
+}
+.kurs-top {
+  margin-bottom: 30px;
+}
+.kurs-top h1 {
+  font-size: 25px;
+}
+.kurs-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.kurs-bottom-element {
+  margin-bottom: 50px;
+}
+.kurs-bottom-element h1 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.kurs-bottom-element p {
+  color: dimgray;
+  width: 250px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
 .trainer h2 {
   margin-bottom: 50px;
   font-family: "Jost";

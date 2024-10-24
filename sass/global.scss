@@ -315,6 +315,65 @@ header {
     }
   }
 }
+.robo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  &-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 50px;
+    h1 {
+      font-size: 18px;
+      width: 600px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  &-bottom {
+    display: flex;
+    gap: 20px;
+
+    h1 {
+      color: orangered;
+    }
+    p {
+      font-size: 15px;
+      width: 250px;
+    }
+  }
+}
+.kurs{
+  margin-top: 100px;
+  &-top{
+    margin-bottom: 30px;
+    h1{
+      font-size: 25px;
+    }
+  }
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    &-element{
+      margin-bottom: 50px;
+          h1{
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    p{
+      color: dimgray;
+      width: 250px;
+      line-height: 20px;
+      font-size: 12px;
+    }
+    }
+
+  }
+}
 .trainer {
   h2 {
     margin-bottom: 50px;
@@ -601,42 +660,41 @@ dialog {
       color: #fff;
     }
   }
-&-right{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  input{
-    width: 700px;
-    height: 50px;
-    padding-left: 15px;
-    border-radius: 10px ;
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      width: 700px;
+      height: 50px;
+      padding-left: 15px;
+      border-radius: 10px;
+    }
   }
-}
-
 }
 #sub {
   background-color: #141024;
   color: white;
 }
-footer{
+footer {
   background-color: #141024;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  &-left{
-    h1{
+  &-left {
+    h1 {
       color: white;
     }
-    a{
+    a {
       color: dimgray;
     }
   }
-  &-right{
-    h1{
+  &-right {
+    h1 {
       color: white;
     }
   }
