@@ -43,22 +43,15 @@ ul {
 .content {
   max-width: 50%;
   margin-left: 21px;
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
 }
-
-h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-p {
+  p {
   font-size: 1.2rem;
   margin: 20px 0;
 }
-// .img {
-//   width: 515px;
-//   height: 907px;
-// }
-.cta-button {
+  .cta-button {
   background-color: #e33434;
   color: white;
   padding: 15px 30px;
@@ -67,9 +60,9 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .cta-button:hover {
   background-color: #c12727;
+}
 }
 
 .image-container {
@@ -82,7 +75,11 @@ p {
   width: 90%;
   height: 100%;
   border-radius: 10px;
+  .img{
+    width: 400px;
+  }
 }
+
 header {
   background-color: #141024;
   width: 100%;

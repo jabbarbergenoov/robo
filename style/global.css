@@ -45,18 +45,15 @@ ul {
   max-width: 50%;
   margin-left: 21px;
 }
-
-h1 {
+.content h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-
-p {
+.content p {
   font-size: 1.2rem;
   margin: 20px 0;
 }
-
-.cta-button {
+.content .cta-button {
   background-color: #e33434;
   color: white;
   padding: 15px 30px;
@@ -65,16 +62,14 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.cta-button:hover {
+.content .cta-button:hover {
   background-color: #c12727;
 }
 
 .image-container {
   max-width: 50%;
 }
-
-.image-container img {
+.image-container .image-container img {
   margin-left: 28px;
   width: 90%;
   height: 100%;
