@@ -518,6 +518,7 @@ dialog[open] {
   display: flex;
   padding: 100px 90px;
   align-items: center;
+  gap: 200px;
 }
 .registor-text h3 {
   font-family: "Jost";
@@ -536,18 +537,19 @@ dialog[open] {
   text-align: left;
   color: #fff;
 }
-.registor-panel {
+.registor-right {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 }
-.registor-panel input {
-  width: 500px;
-  height: 64px;
-  top: 4152px;
-  left: 980px;
-  gap: 0px;
-  border-radius: 5px;
-  opacity: 0px;
-  background: #F6F6F6;
+.registor-right input {
+  width: 700px;
+  height: 50px;
+  padding-left: 15px;
+  border-radius: 10px;
+}
+
+#sub {
+  background-color: #141024;
+  color: white;
 }/*# sourceMappingURL=global.css.map */

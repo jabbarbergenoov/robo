@@ -580,6 +580,7 @@ dialog {
     display: flex;
     padding: 100px 90px;
     align-items: center;
+    gap: 200px;
   }
   &-text {
     h3 {
@@ -600,19 +601,19 @@ dialog {
       color: #fff;
     }
   }
-  &-panel {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    input {
-      width: 500px;
-      height: 64px;
-      top: 4152px;
-      left: 980px;
-      gap: 0px;
-      border-radius: 5px;
-      opacity: 0px;
-      background: #F6F6F6;
-    }
+&-right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  input{
+    width: 700px;
+    height: 50px;
+    padding-left: 15px;
+    border-radius: 10px ;
   }
+}
+}
+#sub {
+  background-color: #141024;
+  color: white;
 }
