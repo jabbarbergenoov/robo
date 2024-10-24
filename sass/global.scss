@@ -637,6 +637,7 @@ dialog {
     display: flex;
     padding: 100px 90px;
     align-items: center;
+    gap: 200px;
   }
   &-text {
     h3 {
@@ -669,7 +670,7 @@ dialog {
       gap: 0px;
       border-radius: 5px;
       opacity: 0px;
-      background: #f6f6f6;
+      background: #F6F6F6;
     }
   }
 }

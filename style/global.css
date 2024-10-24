@@ -571,6 +571,7 @@ dialog[open] {
   display: flex;
   padding: 100px 90px;
   align-items: center;
+  gap: 200px;
 }
 .registor-text h3 {
   font-family: "Jost";
@@ -589,10 +590,10 @@ dialog[open] {
   text-align: left;
   color: #fff;
 }
-.registor-panel {
+.registor-right {
   display: flex;
-  gap: 20px;
   flex-direction: column;
+  gap: 20px;
 }
 .registor-panel input {
   width: 500px;
@@ -602,5 +603,5 @@ dialog[open] {
   gap: 0px;
   border-radius: 5px;
   opacity: 0px;
-  background: #f6f6f6;
+  background: #F6F6F6;
 }/*# sourceMappingURL=global.css.map */
