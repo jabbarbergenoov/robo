@@ -23,6 +23,301 @@ ul {
   overflow: hidden;
 }
 
+header {
+  background-color: #141024;
+  width: 100%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  .header-bars {
+    display: none;
+  }
+  &-left {
+    h1 {
+      color: white;
+      font-size: 32px;
+    }
+  }
+
+  &-centr {
+    ul {
+      display: flex;
+      gap: 20px;
+    }
+    li {
+      list-style: none;
+      li {
+        font-size: 22px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  &-right {
+    h1 {
+      a {
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1132px) {
+  .container {
+    width: 1000px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        a {
+          color: white;
+          font-size: 31px;
+        }
+      }
+    }
+    &-centr {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        li {
+          font-size: 21px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    &-right {
+      h1 {
+        color: white;
+        font-size: 31px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        color: white;
+        font-size: 28px;
+      }
+    }
+    &-centr {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        li {
+          font-size: 20px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    &-right {
+      h1 {
+        color: white;
+        font-size: 28px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 800px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        color: white;
+        font-size: 25px;
+      }
+    }
+    &-centr {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        li {
+          font-size: 18px;
+        }
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    &-right {
+      h1 {
+        color: white;
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 700px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        color: white;
+        font-size: 22px;
+      }
+    }
+    &-centr {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        font-size: 15px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    &-right {
+      h1 {
+        color: white;
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        color: white;
+        font-size: 20px;
+      }
+    }
+    &-centr {
+      display: flex;
+      gap: 20px;
+      li {
+        list-style: none;
+        font-size: 12px;
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+    &-right {
+      h1 {
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+  // header {
+  //   width: 100%;
+  // }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    &-left {
+      h1 {
+        color: white;
+        font-size: 18px;
+      }
+    }
+
+    &-bars {
+      display: block;
+      overflow: hidden;
+      .menu-button {
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+      }
+
+      nav {
+        background: #11015b;
+        position: absolute;
+        top: 70px;
+        left: 55.5%;
+        width: 250px;
+        transition: max-height 0.3s ease-out;
+        border-radius: 0px 0px 20px 20px;
+      }
+
+      nav.hidden {
+        display: none;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        border-radius: 20px;
+      }
+
+      nav ul li {
+        padding: 10px;
+      }
+
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    &-centr,
+    &-right {
+      display: none;
+    }
+  }
+}
 .trainer {
   h2 {
     margin-bottom: 50px;
@@ -49,13 +344,12 @@ ul {
   &::-webkit-scrollbar-thumb:hover {
     background: black;
   }
-
 }
 
 .slide {
   h3 {
     min-width: 200px;
-    font-family: 'Jost';
+    font-family: "Jost";
     font-size: 21px;
     font-weight: 600;
     line-height: 38.4px;
@@ -63,17 +357,17 @@ ul {
   }
 
   p {
-    font-family: 'Jost';
+    font-family: "Jost";
     font-size: 14px;
     font-weight: 400;
     line-height: 28.8px;
     text-align: left;
-    color: #141024B2;
+    color: #141024b2;
   }
 
   a {
-    color: #D52027;
-    font-family: 'Jost';
+    color: #d52027;
+    font-family: "Jost";
     font-size: 18px;
     font-weight: 400;
     line-height: 28.8px;
@@ -121,7 +415,7 @@ ul {
   text-align: center;
   padding-top: 40px;
   border-radius: 20px;
-  transition: .5s;
+  transition: 0.5s;
 
   &:hover {
     color: #fff;
@@ -163,18 +457,18 @@ ul {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
-  font-family: 'Jost';
+  font-family: "Jost";
   margin-top: 10px;
   border-bottom: 1px solid gray;
   padding-bottom: 10px;
 
   a {
     color: #000;
-    transition: .5s;
+    transition: 0.5s;
     font-weight: 600;
 
     &:hover {
-      color: #D52027;
+      color: #d52027;
     }
   }
 }
@@ -187,7 +481,7 @@ dialog {
   opacity: 0;
   scale: 0;
   display: block;
-  transition: all .5s;
+  transition: all 0.5s;
   padding: 20px;
   border: 1px solid #fff;
   overflow-y: auto;
@@ -247,7 +541,7 @@ dialog {
     height: 500px;
 
     h3 {
-      font-family: 'Jost';
+      font-family: "Jost";
       font-size: 30px;
       font-weight: 600;
       line-height: 48px;
@@ -257,7 +551,7 @@ dialog {
     }
 
     p {
-      font-family: 'Jost';
+      font-family: "Jost";
       font-size: 18px;
       font-weight: 400;
       line-height: 28.8px;
@@ -269,15 +563,15 @@ dialog {
       padding: 25px 54px;
       border-radius: 5px;
       border: 1px solid transparent;
-      background-color: #D52027;
+      background-color: #d52027;
       color: #fff;
       font-size: 16px;
-      transition: .5s;
+      transition: 0.5s;
 
       &:hover {
         background-color: #fff;
-        color: #D52027;
-        border: 1px solid #D52027;
+        color: #d52027;
+        border: 1px solid #d52027;
       }
     }
   }

@@ -23,6 +23,259 @@ ul {
   overflow: hidden;
 }
 
+header {
+  background-color: #141024;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.header .header-bars {
+  display: none;
+}
+.header-left h1 {
+  color: white;
+  font-size: 32px;
+}
+.header-centr ul {
+  display: flex;
+  gap: 20px;
+}
+.header-centr li {
+  list-style: none;
+}
+.header-centr li li {
+  font-size: 22px;
+}
+.header-centr li a {
+  text-decoration: none;
+  color: white;
+}
+.header-right h1 a {
+  color: white;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 1132px) {
+  .container {
+    width: 1000px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 a {
+    color: white;
+    font-size: 31px;
+  }
+  .header-centr {
+    display: flex;
+    gap: 20px;
+  }
+  .header-centr li {
+    list-style: none;
+  }
+  .header-centr li li {
+    font-size: 21px;
+  }
+  .header-centr li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-right h1 {
+    color: white;
+    font-size: 31px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 900px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: white;
+    font-size: 28px;
+  }
+  .header-centr {
+    display: flex;
+    gap: 20px;
+  }
+  .header-centr li {
+    list-style: none;
+  }
+  .header-centr li li {
+    font-size: 20px;
+  }
+  .header-centr li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-right h1 {
+    color: white;
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 800px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: white;
+    font-size: 25px;
+  }
+  .header-centr {
+    display: flex;
+    gap: 20px;
+  }
+  .header-centr li {
+    list-style: none;
+  }
+  .header-centr li li {
+    font-size: 18px;
+  }
+  .header-centr li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-right h1 {
+    color: white;
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    width: 700px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: white;
+    font-size: 22px;
+  }
+  .header-centr {
+    display: flex;
+    gap: 20px;
+  }
+  .header-centr li {
+    list-style: none;
+    font-size: 15px;
+  }
+  .header-centr li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-right h1 {
+    color: white;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container {
+    width: 600px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: white;
+    font-size: 20px;
+  }
+  .header-centr {
+    display: flex;
+    gap: 20px;
+  }
+  .header-centr li {
+    list-style: none;
+    font-size: 12px;
+  }
+  .header-centr li a {
+    text-decoration: none;
+    color: white;
+  }
+  .header-right h1 {
+    color: white;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 500px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  .header-left h1 {
+    color: white;
+    font-size: 18px;
+  }
+  .header-bars {
+    display: block;
+    overflow: hidden;
+  }
+  .header-bars .menu-button {
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+  .header-bars nav {
+    background: #11015b;
+    position: absolute;
+    top: 70px;
+    left: 55.5%;
+    width: 250px;
+    transition: max-height 0.3s ease-out;
+    border-radius: 0px 0px 20px 20px;
+  }
+  .header-bars nav.hidden {
+    display: none;
+  }
+  .header-bars nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    border-radius: 20px;
+  }
+  .header-bars nav ul li {
+    padding: 10px;
+  }
+  .header-bars nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  .header-centr, .header-right {
+    display: none;
+  }
+}
 .trainer h2 {
   margin-bottom: 50px;
   font-family: "Jost";
@@ -64,7 +317,7 @@ ul {
   color: rgba(20, 16, 36, 0.6980392157);
 }
 .slide a {
-  color: #D52027;
+  color: #d52027;
   font-family: "Jost";
   font-size: 18px;
   font-weight: 400;
@@ -159,7 +412,7 @@ ul {
   font-weight: 600;
 }
 .modal-href a:hover {
-  color: #D52027;
+  color: #d52027;
 }
 
 .modal-text {
@@ -246,13 +499,13 @@ dialog[open] {
   padding: 25px 54px;
   border-radius: 5px;
   border: 1px solid transparent;
-  background-color: #D52027;
+  background-color: #d52027;
   color: #fff;
   font-size: 16px;
   transition: 0.5s;
 }
 .price .price-card button:hover {
   background-color: #fff;
-  color: #D52027;
-  border: 1px solid #D52027;
+  color: #d52027;
+  border: 1px solid #d52027;
 }/*# sourceMappingURL=global.css.map */
