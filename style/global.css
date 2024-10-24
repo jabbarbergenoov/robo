@@ -552,4 +552,24 @@ dialog[open] {
 #sub {
   background-color: #141024;
   color: white;
+}
+
+footer {
+  background-color: #141024;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.footer-left h1 {
+  color: white;
+}
+.footer-left a {
+  color: dimgray;
+}
+.footer-right h1 {
+  color: white;
 }/*# sourceMappingURL=global.css.map */

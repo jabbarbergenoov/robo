@@ -612,8 +612,32 @@ dialog {
     border-radius: 10px ;
   }
 }
+
 }
 #sub {
   background-color: #141024;
   color: white;
+}
+footer{
+  background-color: #141024;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  &-left{
+    h1{
+      color: white;
+    }
+    a{
+      color: dimgray;
+    }
+  }
+  &-right{
+    h1{
+      color: white;
+    }
+  }
 }
