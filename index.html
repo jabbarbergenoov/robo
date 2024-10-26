@@ -29,15 +29,16 @@
             <h1><a href="tel:+78000001122">+7 800 000 11 22</a></h1>
           </div>
           <div class="header-bars">
-            <div class="menu-button" onclick="toggleMenu()">☰</div>
-            <nav id="navbar" class="hidden">
+            <div class="menu-button" onclick="navbar.showModal()">☰</div>
+            <dialog id="navbar" class="hidden">
               <ul>
                 <li><a href="#">О школе</a></li>
                 <li><a href="#">Тренеры</a></li>
                 <li><a href="#">Стоимость</a></li>
                 <li><a href="tel:+78000001122">+7 800 000 11 22</a></li>
+                <li><a href="tel:+78000001122" onclick="navbar.close()">x</a></li>
               </ul>
-            </nav>
+            </dialog>
           </div>
         </div>
       </div>
@@ -126,7 +127,7 @@
       </section>
       <section class="trainer">
         <div class="container">
-          <h2>Профессиональные тренеры</h2>
+          <h2 class="title">Профессиональные тренеры</h2>
           <div class="slider">
             <div class="slide">
               <img src="images/unsplash_Zz5LQe-VSMY.jpg" alt="Ирина Палы" />
@@ -345,12 +346,12 @@
               <h3>Запишитесь на курс со скидкой 10%</h3>
               <p>Акция действительна до 10 марта 2022 года</p>
             </div>
-            <div class="registor-right">
-              <input type="text" placeholder="Имя" />
-              <input type="text" placeholder="Телефон" />
-              <input type="text" placeholder="E-mail" />
+            <form class="registor-right">
+              <input type="text" placeholder="Имя"  id="name" />
+              <input type="number" placeholder="Телефон" id="phone" />
+              <input type="text" placeholder="E-mail" id="mail" />
               <input type="submit" value="Оформить заявку" id="sub" />
-            </div>
+            </form>
           </div>
         </div>
       </section>

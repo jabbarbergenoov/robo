@@ -46,28 +46,27 @@ ul {
   h1 {
     font-size: 3rem;
     font-weight: bold;
-}
+  }
   p {
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
   .cta-button {
-  background-color: #e33434;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.cta-button:hover {
-  background-color: #c12727;
-}
+    background-color: #e33434;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .cta-button:hover {
+    background-color: #c12727;
+  }
 }
 
 .image-container {
   max-width: 50%;
-  
 }
 
 .image-container img {
@@ -75,7 +74,7 @@ ul {
   width: 90%;
   height: 100%;
   border-radius: 10px;
-  .img{
+  .img {
     width: 400px;
   }
 }
@@ -200,6 +199,11 @@ header {
       }
     }
   }
+  .registor-right {
+    input {
+      width: 200px;
+    }
+  }
 }
 @media screen and (max-width: 900px) {
   .container {
@@ -242,11 +246,30 @@ header {
   .container {
     width: 700px;
   }
+
+  .robo-bottom-element {
+    flex-direction: row;
+  }
+  .kurs-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kurs-bottom-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+    .header-bars {
+      display: block;
+    }
+    .header-centr {
+      display: none;
+    }
     &-left {
       h1 {
         color: white;
@@ -265,10 +288,61 @@ header {
         }
       }
     }
+    #navbar {
+      width: 300px;
+      left: 500px;
+      background-color: #12015b8e;
+      ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        gap: 20px;
+        a {
+          color: #fff;
+        }
+      }
+    }
     &-right {
+      display: none;
       h1 {
         color: white;
         font-size: 22px;
+      }
+    }
+  }
+  .menu-button {
+    color: #fff;
+    font-size: 19px;
+  }
+  .price-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .price-card {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #navbar {
+    width: 300px;
+    left: 100px;
+    top: 500px;
+    height: 300px;
+    background-color: #12015b8e;
+    border: 1px solid black;
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding-top: 50px;
+      gap: 20px;
+      a {
+        color: #fff;
       }
     }
   }
@@ -307,6 +381,21 @@ header {
       }
     }
   }
+  .registor-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .registor-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .trainer {
+    h2 {
+      font-size: 34px;
+    }
+  }
 }
 @media screen and (max-width: 600px) {
   .container {
@@ -323,53 +412,36 @@ header {
         font-size: 18px;
       }
     }
-
-    &-bars {
-      display: block;
-      overflow: hidden;
-      .menu-button {
-        cursor: pointer;
-        font-size: 24px;
-        color: white;
-      }
-
-      nav {
-        background: #11015b;
-        position: absolute;
-        top: 70px;
-        left: 55.5%;
-        width: 250px;
-        transition: max-height 0.3s ease-out;
-        border-radius: 0px 0px 20px 20px;
-      }
-
-      nav.hidden {
-        display: none;
-      }
-
-      nav ul {
-        list-style: none;
-        padding: 0;
+    #navbar {
+      width: 250px;
+      left: 410px;
+      background-color: #12015b8e;
+      ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 0;
-        border-radius: 20px;
-      }
-
-      nav ul li {
-        padding: 10px;
-      }
-
-      nav ul li a {
-        color: #fff;
-        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        padding-top: 50px;
+        gap: 20px;
+        a {
+          color: #fff;
+        }
       }
     }
-    &-centr,
-    &-right {
-      display: none;
-    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 450px;
+  }  
+  .title {
+    font-size: 20px;
+  }
+  .image-container {
+    display: none;
+  }
+  .content {
+    width: 300px;
   }
 }
 .robo {
@@ -404,31 +476,30 @@ header {
     }
   }
 }
-.kurs{
+.kurs {
   margin-top: 100px;
-  &-top{
+  &-top {
     margin-bottom: 30px;
-    h1{
+    h1 {
       font-size: 25px;
     }
   }
-  &-bottom{
+  &-bottom {
     display: flex;
     justify-content: space-between;
-    &-element{
+    &-element {
       margin-bottom: 50px;
-          h1{
-      font-size: 15px;
-      margin-bottom: 10px;
+      h1 {
+        font-size: 15px;
+        margin-bottom: 10px;
+      }
+      p {
+        color: dimgray;
+        width: 250px;
+        line-height: 20px;
+        font-size: 12px;
+      }
     }
-    p{
-      color: dimgray;
-      width: 250px;
-      line-height: 20px;
-      font-size: 12px;
-    }
-    }
-
   }
 }
 .trainer {
@@ -652,7 +723,7 @@ dialog {
 
   .price-card {
     height: 500px;
-
+    width: 300px;
     h3 {
       font-family: "Jost";
       font-size: 30px;
@@ -694,9 +765,9 @@ dialog {
   margin-top: 200px;
   &-inner {
     display: flex;
-    padding: 100px 90px;
+    padding: 100px 0px;
     align-items: center;
-    gap: 200px;
+    justify-content: space-evenly;
   }
   &-text {
     h3 {
@@ -717,42 +788,41 @@ dialog {
       color: #fff;
     }
   }
-&-right{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  input{
-    width: 700px;
-    height: 50px;
-    padding-left: 15px;
-    border-radius: 10px ;
+  &-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input {
+      width: 300px;
+      height: 50px;
+      padding-left: 15px;
+      border-radius: 10px;
+    }
   }
-}
-
 }
 #sub {
   background-color: #141024;
   color: white;
 }
-footer{
+footer {
   background-color: #141024;
 }
 
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  &-left{
-    h1{
+  &-left {
+    h1 {
       color: white;
     }
-    a{
+    a {
       color: dimgray;
     }
   }
-  &-right{
-    h1{
+  &-right {
+    h1 {
       color: white;
     }
   }

@@ -182,6 +182,9 @@ header {
     color: white;
     font-size: 28px;
   }
+  .registor-right input {
+    width: 200px;
+  }
 }
 @media screen and (max-width: 900px) {
   .container {
@@ -220,11 +223,29 @@ header {
   .container {
     width: 700px;
   }
+  .robo-bottom-element {
+    flex-direction: row;
+  }
+  .kurs-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .kurs-bottom-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
+  }
+  .header .header-bars {
+    display: block;
+  }
+  .header .header-centr {
+    display: none;
   }
   .header-left h1 {
     color: white;
@@ -242,9 +263,62 @@ header {
     text-decoration: none;
     color: white;
   }
+  .header #navbar {
+    width: 300px;
+    left: 500px;
+    background-color: rgba(18, 1, 91, 0.5568627451);
+  }
+  .header #navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  .header #navbar ul a {
+    color: #fff;
+  }
+  .header-right {
+    display: none;
+  }
   .header-right h1 {
     color: white;
     font-size: 22px;
+  }
+  .menu-button {
+    color: #fff;
+    font-size: 19px;
+  }
+  .price-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .price-card {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 750px) {
+  #navbar {
+    width: 300px;
+    left: 100px;
+    top: 500px;
+    height: 300px;
+    background-color: rgba(18, 1, 91, 0.5568627451);
+    border: 1px solid black;
+  }
+  #navbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 20px;
+  }
+  #navbar ul a {
+    color: #fff;
   }
 }
 @media screen and (max-width: 700px) {
@@ -277,6 +351,19 @@ header {
     color: white;
     font-size: 20px;
   }
+  .registor-inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .registor-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .trainer h2 {
+    font-size: 34px;
+  }
 }
 @media screen and (max-width: 600px) {
   .container {
@@ -292,45 +379,35 @@ header {
     color: white;
     font-size: 18px;
   }
-  .header-bars {
-    display: block;
-    overflow: hidden;
-  }
-  .header-bars .menu-button {
-    cursor: pointer;
-    font-size: 24px;
-    color: white;
-  }
-  .header-bars nav {
-    background: #11015b;
-    position: absolute;
-    top: 70px;
-    left: 55.5%;
+  .header #navbar {
     width: 250px;
-    transition: max-height 0.3s ease-out;
-    border-radius: 0px 0px 20px 20px;
+    left: 410px;
+    background-color: rgba(18, 1, 91, 0.5568627451);
   }
-  .header-bars nav.hidden {
-    display: none;
-  }
-  .header-bars nav ul {
-    list-style: none;
-    padding: 0;
+  .header #navbar ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0;
-    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+    gap: 20px;
   }
-  .header-bars nav ul li {
-    padding: 10px;
-  }
-  .header-bars nav ul li a {
+  .header #navbar ul a {
     color: #fff;
-    text-decoration: none;
   }
-  .header-centr, .header-right {
+}
+@media screen and (max-width: 500px) {
+  .container {
+    width: 450px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .image-container {
     display: none;
+  }
+  .content {
+    width: 300px;
   }
 }
 .robo {
@@ -592,6 +669,7 @@ dialog[open] {
 }
 .price .price-card {
   height: 500px;
+  width: 300px;
 }
 .price .price-card h3 {
   font-family: "Jost";
@@ -631,9 +709,9 @@ dialog[open] {
 }
 .registor-inner {
   display: flex;
-  padding: 100px 90px;
+  padding: 100px 0px;
   align-items: center;
-  gap: 200px;
+  justify-content: space-evenly;
 }
 .registor-text h3 {
   font-family: "Jost";
@@ -658,7 +736,7 @@ dialog[open] {
   gap: 20px;
 }
 .registor-right input {
-  width: 700px;
+  width: 300px;
   height: 50px;
   padding-left: 15px;
   border-radius: 10px;
